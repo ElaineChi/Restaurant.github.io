@@ -1,0 +1,364 @@
+
+/* 版面設定  星號代表選擇全部 */
+
+*{
+    margin: 0 ;
+    padding: 0%;
+    box-sizing: content-box;
+    text-decoration: none;
+    transition: 0.4s all linear;
+    font-size: 25px;
+    /* background-color: blanchedalmond; */
+
+} 
+
+/* 
+  /* <!-- 1: header --> */
+  header{
+      font-size: 20px;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding:  10px;
+      background-color: burlywood;
+      box-shadow: 10px 1rem 1rem rebeccapurple;
+      opacity: 0.9;
+  }
+  header img{
+        width: 100x; height: 100px; padding-bottom: 10px; filter: saturate(8);
+  }
+  header .navbar a{
+      font-size: 22px;
+      font-weight: normal;
+      color: rgb(0, 60, 255);
+      padding-left: 10px;
+  }
+  #menu-bar{
+      font-size: 25px;
+      cursor: pointer;
+      color: rgb(0, 60, 255);
+      border: 1px solid  rgb(0, 60, 255);
+      border-radius: 5px;
+      padding: 8px;
+      display: none;
+  }
+  header .logo{
+    font-size: 25px;
+    font-weight: normal;
+    color: rgb(0, 60, 255);
+    
+  }
+    /* <!-- 2: page --> */
+    section{
+        padding: 10px;
+    }
+    .home{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        min-height: 500px;
+        align-items: center;
+        background: url(../images/background3.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .home .content{
+        flex: 1 1 30px;
+        margin-top: 60px;
+        padding: 50px;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(90deg, rgb(2, 3, 3) 0%, rgba(255,255,255,0) 86%);
+    }
+    .home .content h3{
+        font-size: 55px;
+        color: burlywood;
+    }
+    .home .content p{
+        font-size: 20px;
+        color: white;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .btn{
+        padding: 10px ;
+        border: 3px solid burlywood;
+        color: burlywood;
+        font-size: 25px;
+        border-radius: 10px;
+        z-index: 0;
+    }
+    .btn:hover{
+        background-color: chocolate;
+        color: white;
+        box-shadow: inset 200px 0 0 0 chocolate;
+        transition: 1.5s all;
+    }
+    .home img{
+        flex: 1 1 30px;
+    }
+    .home img{
+        width: 500px;
+        animation: moving 3s linear infinite;
+    }
+    
+    @keyframes moving{
+        0%{transform: translateX(0rem);}
+        50%{transform: translateX(2rem);}
+        100%{transform: translateX(0rem);}
+    }
+    /* <!-- 3: menu --> */
+    .menu .box-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+        .menu .box-container .box{
+            flex: 1 1 10px;
+            padding: 10px;
+            box-shadow: 5px 5px 5px rgb(245, 203, 19);
+            border: 1px solid chocolate;
+            background: url(../images/background2.jpg) no-repeat;
+            background-size: cover;
+            border-radius: 20px;
+            padding: 30px;
+            height: 500x;
+
+        }
+        .menu .box-container .box img{
+            height: 300px;
+            object-fit: cover;
+            width: 100%;
+            border-radius: 200px;
+            z-index: 1;
+
+        }
+        .menu .box-container .box .price{
+            font-weight: bold;
+            font-size: 40px;
+            color: white;
+            background: chocolate;
+            padding: 10px 60px 10px 60px;
+            opacity: 0.8;
+            position: absolute;
+        }
+        .menu .box-container .box h3{
+            color: white;
+            font-size: 30px;
+            padding: 10px 40px 10x 40px;
+            text-align: center;
+            background: rgb(9,9,55);
+            background: rgb(9,9,55);
+        }
+        .menu .box-container .stars{
+            color: chocolate;
+            font-size: 20px;
+            padding: 10px 10px 10x 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu .box-container .box .btn2{
+            color: chocolate;
+            font-size: 30px;
+            padding: 10px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid chocolate;
+        }
+        .menu .box-container .box .btn2:hover{
+            background-color: chocolate;
+            color: white;
+            box-shadow: inset 400px 0 0 0 chocolate;
+            transition: 1s all;
+        }
+       
+    /* <!-- 4: image --> */
+    /* <!-- 5: order --> */
+    .order .row{
+        padding: 10px;
+        box-shadow: 5px 5px 5px gray;
+        background: white;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        border-radius: 20px;
+    }
+    .order .row .image{
+        flex: 1 1 30px;
+    }
+    .order .row .image  img{
+        height: 300;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .order .row form .inputbox input, .order .row form textarea{
+        padding: 10px;
+        margin: 10px;
+        font-size: 20px;
+        color: black;
+        text-transform: none;
+        border:  2px solid black;
+        border-radius: 20px;
+    }
+    .order .row form textarea{
+        width: 90%;
+        resize: none;
+        height: 200px;
+        margin: 5px;
+    }
+    .order .row form .btn3{
+        font-size: 30px;
+        padding: 10px;
+        width: 90%;
+        border-radius: 20px;
+        color: chocolate;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid chocolate;
+    }
+    .order .row form .btn3:hover{
+        background-color: chocolate;
+        color: white;
+        box-shadow: inset 400px 0 0 0 chocolate;
+        transition: 1s  all ;
+    }
+    /* <!-- 6: comment --> */
+    .review .box-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .review .box-container .box{
+        text-align: center;
+        padding: 10px;
+        border: 8px solid white;
+        box-shadow: 5px 5px 5px black;
+        border-radius: 20px;
+        flex:1 1 20px;
+        background: burlywood;
+        margin-top: 80px;
+    }
+    .review .box-container .box img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 8px solid beige;
+        margin-top: -100px;
+        object-fit: cover; 
+    }
+    .review .box-container .box .stars i{
+        font-size: 20px;
+        color: chocolate;
+        padding: 10px;
+    }
+    .review .box-container .box .stars p{
+        font-size: 20px;
+        color: black;
+        padding: 10px;
+    }
+    /* <!-- 7: footer--> */ 
+    .footer{
+        background: blanchedalmond;
+        text-align: center;
+    }
+    .footer .social{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .credit{
+        padding: 10px;
+        color: gray;
+        font-weight: normal;
+    }
+    /* .footer .credit span{
+        color: yellow;
+    } */
+    /*  回上層按鈕 */
+    #scroll-up{
+        position: fixed;
+        top: -120%;
+        right: 20px;
+        padding: 10px;
+        font-size: 25px;
+        background: chocolate;
+        color: white;
+        border-radius: 10px;
+        opacity: 0.8;
+        transition: 1s  linear;
+    } 
+    #scroll-up.active{
+        top: 80%;
+    }
+
+/* RWD 手機版 響應式網站 */
+@media(max-width:600px){
+    #menu-bar{
+        display: initial;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+    header .navbar{
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 80px;
+        background-color: blueviolet;
+        border-top: 3px solid gray;
+        /* 隱藏下拉選單 */
+        clip-path: polygon(0 0, 100% 0, 100% 0,0 0 );
+
+    }
+    header .navbar a{
+        /* 疊起來 */
+        position: block;
+        font-size: 22px;
+        font-weight: normal;
+         color: azure;
+        background-color: white;
+        border-left: 3px solid gray;
+
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
+        padding: 10px;
+    }
+    .home .content {
+        text-align: center;
+        margin-top: 70px;
+        padding-top: 20px;
+
+    }
+
+    .home  img{
+        width: 300px;
+        margin-top: -50px;
+    }
+    .btn{
+        width: 100%;
+        z-index: 4;
+    }
+
+    /* 第三區  菜單*/
+    .menu .box-container{
+        flex: 1 1 auto;
+    }
+    /* 第四區 */
+    .review .box-container{
+        flex: 1 1 auto;
+    }
+    .order .box-container{
+        flex: 1 1 auto;
+    }
+}
